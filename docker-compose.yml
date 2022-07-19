@@ -1,0 +1,9 @@
+version: "3"
+services:
+  proxy:
+    image: telegrammessenger/proxy:latest
+    restart: always
+    ports:
+      - 4443:443
+    volumes:
+      - ./config:/data
